@@ -1,0 +1,14 @@
+; const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple'];
+; let currentIndex = 0;
+
+;  const button = document.getElementById('colorBtn');
+
+;  button.addEventListener('click', () => {
+;    document.body.style.backgroundColor = colors[currentIndex];
+;    currentIndex = (currentIndex + 1) % colors.length;
+;  });
+
+; 과제1 : 위에 자바스크립트 해석해오기 (객체랑 객체의 기능을 물어볼것임)
+
+; 과제2 :  안하면 벌금 5000원
+; 입력란에 내가 글을쓰고 버튼을 누르면 입력한 내용이 테이블에 뜨게 하라..!

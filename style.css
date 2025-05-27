@@ -1,0 +1,43 @@
+/* 가운데 정렬된 컨테이너 */
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  /* 입력창과 버튼 가로 정렬 */
+  #inputRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* 리스트 스타일 */
+  #itemList {
+    margin-top: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.deleteBtn {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+}
+
+li:hover .deleteBtn {
+  display: inline;
+}
