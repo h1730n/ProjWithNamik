@@ -8,16 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const text = input.value.trim();
     if (text) {
       const li = document.createElement('li');
+      li.className = 'listItem';
+
+      const span = document.createElement('span');
+      span.textContent = text;
 
       const deleteBtn = document.createElement('button');
-      deleteBtn.textContent = '×';
+      deleteBtn.textContent = '삭제';
       deleteBtn.className = 'deleteBtn';
       deleteBtn.addEventListener('click', () => {
         li.remove();
       });
 
+      li.appendChild(span);
       li.appendChild(deleteBtn);
-      li.appendChild(document.createTextNode(text));
       list.appendChild(li);
       input.value = '';
     }

@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ToDo List</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .deleteBtn {
+      visibility: hidden;
+      transition: visibility 0.2s;
+    }
+
+    .listItem:hover .deleteBtn {
+      visibility: visible;
+    }
+  </style>
 </head>
 <body>
   <div id="mainContainer">
@@ -13,7 +23,7 @@
       <button id="colorBtn">내용 입력</button>
       <button id="clearBtn">전체 삭제</button>
     </div>
-    <ul id="itemList"></ul>
+    <ul id="itemList" style="list-style: none;"></ul>
   </div>
   <script src="main.js"></script>
 </body>
