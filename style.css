@@ -27,6 +27,11 @@ li {
   padding-left: 25px;
 }
 
+
+.aaa{
+  color: red;
+}
+
 .deleteBtn {
   position: absolute;
   left: 0;
